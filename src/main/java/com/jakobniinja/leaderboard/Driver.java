@@ -1,5 +1,7 @@
 package com.jakobniinja.leaderboard;
 
+import java.util.Objects;
+
 public class Driver {
 
   private final String name;
@@ -18,5 +20,22 @@ public class Driver {
 
   public String getCountry() {
     return country;
+  }
+
+  @Override
+  public int hashCode() {
+    return name.hashCode() * 31 + country.hashCode();
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    Driver driver = (Driver) o;
+    return Objects.equals(name, driver.name) && Objects.equals(country, driver.country);
   }
 }
