@@ -1,10 +1,10 @@
 package com.jakobniinja.leaderboard;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import javax.print.attribute.standard.MediaSize.NA;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -36,7 +36,7 @@ public class DriverTest {
 
   @Test
   void onHashcodeWilliam() {
-    assertEquals(1388422473, driver.hashCode());
+    assertEquals(1388423434, driver.hashCode());
   }
 
   @Test
@@ -45,32 +45,32 @@ public class DriverTest {
   }
 
   @Test
-  void onEqualsNull(){
-    assertNotEquals(null, driver);
+  void onEqualsNull() {
+    assertFalse(driver.equals(null));
   }
 
   @Test
-  void onEqualsOtherInstance(){
+  void onEqualsOtherInstance() {
     String secondDriver = "Jakob";
     assertNotEquals(driver, secondDriver);
   }
 
   @Test
-  void onEqualsName(){
+  void onEqualsName() {
     Driver other = new Driver(NAME, "German");
     assertNotEquals(driver, other);
   }
 
 
   @Test
-  void onEqualsCountry(){
+  void onEqualsCountry() {
     Driver other = new Driver("Daniel", "Sweden");
     assertNotEquals(driver, other);
   }
 
 
   @Test
-  void onMatchNameCountry(){
+  void onMatchNameCountry() {
     Driver other = new Driver(NAME, "Sweden");
     assertEquals(driver, other);
   }

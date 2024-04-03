@@ -24,7 +24,7 @@ public class Driver {
 
   @Override
   public int hashCode() {
-    return name.hashCode() * 31 + country.hashCode();
+    return Objects.hash(name, country);
   }
 
   @Override
