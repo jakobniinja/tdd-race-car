@@ -20,8 +20,8 @@ public class Race {
 
     for (Driver driver : results) {
       String driverName = driver.getName();
-      if (driver instanceof AutoPilot) {
-        driverName = "Latest Ferrari of model " + ((AutoPilot) driver).getVersion();
+      if (driver instanceof AutoPilot autoPilot) {
+        driverName = String.format("Latest %s of model %s", autoPilot.getCountry(), autoPilot.getVersion());
       }
       driversName.put(driver, driverName);
     }
@@ -31,17 +31,17 @@ public class Race {
     return results;
   }
 
-  @Override
-  public String toString() {
-    return name;
-  }
-
   public String getDriversName(Driver driver) {
     return driversName.get(driver);
   }
 
   public int getPosition(Driver driver) {
     return results.indexOf(driver);
+  }
+
+  @Override
+  public String toString() {
+    return name;
   }
 }
 
