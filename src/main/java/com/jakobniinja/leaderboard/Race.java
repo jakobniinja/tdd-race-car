@@ -9,7 +9,7 @@ public class Race {
 
   private final String name;
 
-  public List<Driver> results;
+  private List<Driver> results;
 
   private final Map<Driver, String> driversName;
 
@@ -20,6 +20,9 @@ public class Race {
 
     for (Driver driver : results) {
       String driverName = driver.getName();
+      if (driver instanceof AutoPilot) {
+        driverName = "Latest Ferrari of model " + ((AutoPilot) driver).getVersion();
+      }
       driversName.put(driver, driverName);
     }
   }
@@ -34,7 +37,11 @@ public class Race {
   }
 
   public String getDriversName(Driver driver) {
-    return this.driversName.get(driver);
+    return driversName.get(driver);
+  }
+
+  public int getPosition(Driver driver) {
+    return results.indexOf(driver);
   }
 }
 
