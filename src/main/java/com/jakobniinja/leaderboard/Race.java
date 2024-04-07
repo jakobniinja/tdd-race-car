@@ -7,6 +7,8 @@ import java.util.Map;
 
 public class Race {
 
+  private static final Integer[] POINTS = new Integer[]{1, 2, 4};
+
   private final String name;
 
   private List<Driver> results;
@@ -42,6 +44,11 @@ public class Race {
   @Override
   public String toString() {
     return name;
+  }
+
+  public int getPoints(Driver driver) {
+    int position = getPosition(driver);
+    return POINTS[position];
   }
 }
 

@@ -3,10 +3,11 @@ package com.jakobniinja.leaderboard;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-public class RaceTest {
+class RaceTest {
 
   private static final String NAME = "David";
 
@@ -53,5 +54,34 @@ public class RaceTest {
     Race race = new Race("Jakob", driver1, driver2, driver3);
 
     assertEquals(2, race.getPosition(driver3));
+  }
+
+
+  @Test
+  void onGetPointsInit1() {
+    Race race = new Race("Jakob", driver1);
+    assertEquals(1, race.getPoints(driver1));
+  }
+
+  @Test
+  void onGetPointsInit2() {
+    Race race = new Race("Jakob", driver1, driver2, driver3);
+    assertEquals(2, race.getPoints(driver2));
+  }
+
+  @Test
+  void onGetPointsInit4() {
+    Race race = new Race("Jakob", driver1, driver2, driver3);
+    assertEquals(4, race.getPoints(driver3));
+  }
+
+
+  @Test
+  void onGetPointsInitNull() {
+    Race race = new Race("Jakob", driver1, driver2, driver3);
+    ArrayIndexOutOfBoundsException exception = assertThrows(ArrayIndexOutOfBoundsException.class, () -> race.getPoints(new Driver("Yaro", "Kroatien")));
+
+    assertEquals("Index -1 out of bounds for length 3", exception.getMessage());
+    assertEquals(null, exception.getCause());
   }
 }
