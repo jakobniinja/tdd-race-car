@@ -82,6 +82,6 @@ class RaceTest {
     ArrayIndexOutOfBoundsException exception = assertThrows(ArrayIndexOutOfBoundsException.class, () -> race.getPoints(new Driver("Yaro", "Kroatien")));
 
     assertEquals("Index -1 out of bounds for length 3", exception.getMessage());
-    assertEquals(null, exception.getCause());
+    assertNull(exception.getCause());
   }
 }

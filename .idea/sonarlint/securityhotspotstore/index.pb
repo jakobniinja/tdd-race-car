@@ -5,3 +5,11 @@ g
 7src/test/java/com/jakobniinja/leaderboard/RaceTest.java,5\2\52e975f049dc01a9c01eb14979ef32bc34a6cf46
 c
 3src/main/java/com/jakobniinja/leaderboard/Race.java,4\3\4355f7a339dbac317759003d7e7fde5d98ec5e67
+h
+8src/main/java/com/jakobniinja/leaderboard/AutoPilot.java,f\2\f26d9861db0c812184114afaaed84c07af9be01b
+e
+5src/main/java/com/jakobniinja/leaderboard/Driver.java,5\5\5595e254abe4c9792edb26f81fb0612f100ddf83
+n
+>src/test/java/com/jakobniinja/leaderboard/LeaderBoardTest.java,1\8\1812fce2f403f9e4fae74cdf624a81fd2a276c1e
+j
+:src/main/java/com/jakobniinja/leaderboard/LeaderBoard.java,5\b\5bf689ba9237cb962229849f9c5d8279eeb8cdf5
