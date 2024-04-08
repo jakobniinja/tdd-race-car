@@ -13,3 +13,9 @@ n
 >src/test/java/com/jakobniinja/leaderboard/LeaderBoardTest.java,1\8\1812fce2f403f9e4fae74cdf624a81fd2a276c1e
 j
 :src/main/java/com/jakobniinja/leaderboard/LeaderBoard.java,5\b\5bf689ba9237cb962229849f9c5d8279eeb8cdf5
+Z
+*src/test/java/com/jakobniinja/AppTest.java,e\e\ee6f6a8be2da90d5f1d8ae8fe2536182a2367585
+l
+<src/test/java/com/jakobniinja/leaderboard/AutoPilotTest.java,8\c\8c0413177f237fcb2c3f10145d3b379c569f5bca
+i
+9src/test/java/com/jakobniinja/leaderboard/DriverTest.java,4\3\43a356a2581b030523f740252bd3e55632b2d271

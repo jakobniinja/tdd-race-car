@@ -2,38 +2,55 @@ package com.jakobniinja.leaderboard;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.Map;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class LeaderBoardTest {
 
-  @Test
-  void onInit() {
-    Race race = new Race("Grand-Tour", new Driver("David", "Sweden"));
-    assertNotNull(new LeaderBoard(race));
+  private LeaderBoard leaderBoard;
+
+  private Race race;
+
+
+  @BeforeEach
+  void setUp() {
+    race = new Race("Grand-Tour", new Driver("David", "Sweden"));
+    leaderBoard = new LeaderBoard(race);
   }
 
   @Test
   void onAddRaceNotEmpty() {
-    Race race = new Race("Grand-Tour", new Driver("David", "Sweden"));
-    LeaderBoard leaderBoard = new LeaderBoard(race);
-
     assertFalse(leaderBoard.getRaces().isEmpty());
   }
 
   @Test
   void onGetEmptyRace() {
-    Race race = new Race("best race", new Driver("David", "Sweden"));
-    assertFalse(new LeaderBoard(race).getRaces().isEmpty());
+    assertFalse(leaderBoard.getRaces().isEmpty());
   }
 
   @Test
   void onInitLeaderBoardNotNull() {
-    Race race = new Race("best race", new Driver("David", "Sweden"));
-
-    LeaderBoard leaderBoard = new LeaderBoard(race);
-
     assertEquals(1, leaderBoard.getRaces().size());
+  }
+
+  @Test
+  void onDisplayLeaderboardTwoRaces() {
+    LeaderBoard leaderBoard = new LeaderBoard(race, race);
+    assertEquals(2, leaderBoard.getRaces().size());
+  }
+
+  @Test
+  void onDriverNoResult() {
+    Map<String, Integer> results = leaderBoard.results();
+    assertEquals(1, results.size());
+  }
+
+  @Test
+  void onFirstDriver1Point() {
+    Map<String, Integer> results = leaderBoard.results();
+    assertTrue(results.containsValue(1));
   }
 }
