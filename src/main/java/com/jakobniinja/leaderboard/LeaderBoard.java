@@ -1,6 +1,8 @@
 package com.jakobniinja.leaderboard;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,5 +30,14 @@ public class LeaderBoard {
       }
     }
     return results;
+  }
+
+  public List<String> getRanking() {
+    Map<String, Integer> results = results();
+
+    List<String> list = new ArrayList<>(results.keySet());
+    Collections.sort(list);
+
+    return list;
   }
 }

@@ -53,4 +53,28 @@ class LeaderBoardTest {
     Map<String, Integer> results = leaderBoard.results();
     assertTrue(results.containsValue(1));
   }
+
+  @Test
+  void onGetDriverRanking() {
+    assertFalse(leaderBoard.getRanking().isEmpty());
+  }
+
+
+  @Test
+  void onVerifyInsertionOrder() {
+    race = new Race("Grand-Tour", new Driver("David", "Sweden"), new Driver("Adam", "Sweden"));
+
+    assertTrue(leaderBoard.getRanking().get(0).equalsIgnoreCase("David"));
+    assertFalse(leaderBoard.getRanking().isEmpty());
+  }
+
+
+  @Test
+  void onImplComparatorForName() {
+    race = new Race("Grand-Tour", new Driver("David B", "Sweden"), new Driver("David A", "Sweden"));
+    leaderBoard = new LeaderBoard(race);
+
+    assertTrue(leaderBoard.getRanking().get(0).equalsIgnoreCase("David A"));
+    assertFalse(leaderBoard.getRanking().isEmpty());
+  }
 }

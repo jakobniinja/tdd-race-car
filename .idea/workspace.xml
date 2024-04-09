@@ -5,16 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b4bd288-aed6-4975-ad09-508d12cfe0db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52e975f049dc01a9c01eb14979ef32bc34a6cf46" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/52e975f049dc01a9c01eb14979ef32bc34a6cf46" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c60771721ff70a1c0d1a9422d21c3b11c071083" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b55b4146e538ccb14e8193afc0537ce34e8b903b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f7b8ca5de256f031fdfad2324616df04ac970732" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/c/0c60771721ff70a1c0d1a9422d21c3b11c071083" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/5/b55b4146e538ccb14e8193afc0537ce34e8b903b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/7/f7b8ca5de256f031fdfad2324616df04ac970732" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakobniinja/leaderboard/PointsComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/PointsComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jakobniinja/leaderboard/LeaderBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakobniinja/leaderboard/LeaderBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jakobniinja/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/AutoPilotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/AutoPilotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/DriverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/DriverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/LeaderBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/LeaderBoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/RaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jakobniinja/leaderboard/RaceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +57,19 @@
     "JUnit.DriverTest.executor": "Run",
     "JUnit.LeaderBoardTest.executor": "Run",
     "JUnit.LeaderBoardTest.onFirstDriver1Point.executor": "Debug",
+    "JUnit.LeaderBoardTest.onGetDriverRanking.executor": "Run",
+    "JUnit.LeaderBoardTest.onImplComparatorForName.executor": "Run",
     "JUnit.LeaderBoardTest.onRaceDriver.executor": "Debug",
     "JUnit.LeaderBoardTest.onRaceDriver3.executor": "Run",
     "JUnit.LeaderBoardTest.onRaceDriver4.executor": "Run",
+    "JUnit.PointsComparatorTest.executor": "Run",
     "JUnit.RaceTest.executor": "Run",
     "JUnit.RaceTest.onGetPointsInit2.executor": "Run",
     "JUnit.RaceTest.onGetPointsInitNull.executor": "Run",
     "JUnit.RaceTest.onInit.executor": "Run",
     "JUnit.java in tdd-race-car.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -87,7 +97,7 @@
       <recent name="com.jakobniinja.leaderboard" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LeaderBoardTest">
+  <component name="RunManager" selected="JUnit.PointsComparatorTest">
     <configuration name="LeaderBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-race-car" />
       <extension name="coverage">
@@ -103,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaderBoardTest.onFirstDriver1Point" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeaderBoardTest.onGetDriverRanking" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-race-car" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +123,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jakobniinja.leaderboard" />
       <option name="MAIN_CLASS_NAME" value="com.jakobniinja.leaderboard.LeaderBoardTest" />
-      <option name="METHOD_NAME" value="onFirstDriver1Point" />
+      <option name="METHOD_NAME" value="onGetDriverRanking" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeaderBoardTest.onRaceDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LeaderBoardTest.onImplComparatorForName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tdd-race-car" />
       <extension name="coverage">
         <pattern>
@@ -129,23 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.jakobniinja.leaderboard" />
       <option name="MAIN_CLASS_NAME" value="com.jakobniinja.leaderboard.LeaderBoardTest" />
-      <option name="METHOD_NAME" value="onRaceDriver" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeaderBoardTest.onRaceDriver3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="tdd-race-car" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.jakobniinja.leaderboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.jakobniinja.leaderboard" />
-      <option name="MAIN_CLASS_NAME" value="com.jakobniinja.leaderboard.LeaderBoardTest" />
-      <option name="METHOD_NAME" value="onRaceDriver3" />
+      <option name="METHOD_NAME" value="onImplComparatorForName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,13 +161,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PointsComparatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tdd-race-car" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jakobniinja.leaderboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jakobniinja.leaderboard" />
+      <option name="MAIN_CLASS_NAME" value="com.jakobniinja.leaderboard.PointsComparatorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PointsComparatorTest" />
+        <item itemvalue="JUnit.LeaderBoardTest.onImplComparatorForName" />
         <item itemvalue="JUnit.LeaderBoardTest" />
+        <item itemvalue="JUnit.LeaderBoardTest.onGetDriverRanking" />
         <item itemvalue="JUnit.LeaderBoardTest.onRaceDriver4" />
-        <item itemvalue="JUnit.LeaderBoardTest.onRaceDriver3" />
-        <item itemvalue="JUnit.LeaderBoardTest.onRaceDriver" />
-        <item itemvalue="JUnit.LeaderBoardTest.onFirstDriver1Point" />
       </list>
     </recent_temporary>
   </component>
@@ -199,10 +208,24 @@
       <workItem from="1712545956064" duration="2228000" />
       <workItem from="1712562377920" duration="3086000" />
       <workItem from="1712585360414" duration="2660000" />
+      <workItem from="1712594698128" duration="1442000" />
+      <workItem from="1712632549793" duration="16000" />
+      <workItem from="1712659089919" duration="2338000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/jakobniinja/leaderboard/LeaderBoard.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
