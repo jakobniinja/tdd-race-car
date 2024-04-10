@@ -36,7 +36,7 @@ public class LeaderBoard {
     Map<String, Integer> results = results();
 
     List<String> list = new ArrayList<>(results.keySet());
-    Collections.sort(list);
+    list.sort(new NameComparator(results));
 
     return list;
   }
